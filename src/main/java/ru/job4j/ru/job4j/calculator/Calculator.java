@@ -15,5 +15,9 @@ public class Calculator {
         System.out.println("Six div two: " + sixDivTwo);
         System.out.println("Five minus two: " + fiveMinusTwo);
         System.out.println("Four times two: " + fourTimesTwo);
+        one = 10;
+        two = 11;
+        onePlusTwo = one + two;
+        System.out.println(onePlusTwo);
     }
 }
