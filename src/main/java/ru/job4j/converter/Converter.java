@@ -1,4 +1,4 @@
-package ru.job4j.ru.job4j.converter;
+package ru.job4j.converter;
 
 public class Converter {
     public static float rubleToEuro(float value) {
@@ -18,4 +18,3 @@ public class Converter {
         System.out.println("140 rubles are " + dollar + " dollars.");
     }
 }
-
