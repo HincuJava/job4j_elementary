@@ -1,10 +1,5 @@
 package ru.job4j.array;
 
-import com.sun.source.util.SourcePositions;
-
-import javax.xml.transform.SourceLocator;
-import java.sql.SQLOutput;
-
 public class ArrayDefinition {
     public static void main(String[] args) {
         short[] ages = new short[10];
