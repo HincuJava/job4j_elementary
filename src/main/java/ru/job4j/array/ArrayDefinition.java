@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+import java.sql.SQLOutput;
+
 public class ArrayDefinition {
     public static void main(String[] args) {
         short[] ages = new short[10];
@@ -13,5 +15,6 @@ public class ArrayDefinition {
         System.out.println("Размер массива равен: " + ages.length);
         System.out.println("Размер массива равен: " + surnames.length);
         System.out.println("Размер массива равен: " + prices.length);
+        System.out.println("Имена: " + names[1]);
     }
 }
