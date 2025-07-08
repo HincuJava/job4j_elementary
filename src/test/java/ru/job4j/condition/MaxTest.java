@@ -14,20 +14,30 @@ class MaxTest {
     }
 
     @Test
-    void whenMax2ToThen2() {
-        int left = 2;
-        int right = 1;
-        int result = Max.max(left, right);
-        int expected = 2;
+    void whenMax3To2To5Then5() {
+        int first = 3;
+        int second = 2;
+        int third = 5;
+        int result = Max.max(first, second, third);
+        int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void whenMax3To3Then3() {
-        int left = 3;
-        int right = 3;
-        int result = Max.max(left, right);
-        int expected = 3;
+    void whenMax7To4To2To9Then9() {
+        int first = 7;
+        int second = 4;
+        int third = 2;
+        int fourth = 9;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 9;
         assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenAllEqualThenAny() {
+        assertThat(Max.max(1, 1)).isEqualTo(1);
+        assertThat(Max.max(1, 1, 1)).isEqualTo(1);
+        assertThat(Max.max(1, 1, 1, 1)).isEqualTo(1);
     }
 }
