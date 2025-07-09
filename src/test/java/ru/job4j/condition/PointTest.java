@@ -15,6 +15,15 @@ class PointTest {
     }
 
     @Test
+    public void whenSamePointIn3DThenZeroDistance() {
+        Point a = new Point(5, 5, 5);
+        Point b = new Point(5, 5, 5);
+        double result = a.distance3d(b);
+        double expected = 0.0;
+        assertThat(result).isEqualTo(expected, offset(0.0));
+    }
+
+    @Test
     void when42to810then14() {
         double expected = 14.42;
         Point a = new Point(-4,2);
